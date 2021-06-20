@@ -3,4 +3,7 @@ This file consists of changes brom bootstrap 4 to 5
 ####################################################
 
 class="jumbotron" -> class="p-5 mb-4 bg-light"
+# if you want to change/customize background color of
+# above jumbotron remove bg-light and add a custom class
+# with the desired background color
 
