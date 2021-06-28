@@ -2,17 +2,28 @@
 This file consists of changes brom bootstrap 4 to 5
 ####################################################
 
-* in header
+# in header
 class="jumbotron" -> class="p-5 mb-4 bg-light"
 # if you want to change/customize background color of
 # above jumbotron remove bg-light and add a custom class
 # with the desired background color
+.jumbotron-custom{
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background-color: #9575cd;
+    color: #fffaf0;
+}
 
 mr-auto -> me-auto
 
-* in navbar
+# in navbar
 data-toggle -> data-bs-toggle
 data-target -> data-bs-target
 
 Simplified the default appearance of breadcrumbs by removing padding, background-color, and border-radius.
 Added new CSS custom property --bs-breadcrumb-divider for easy customization without needing to recompile CSS.
+
+breadcrumb -> breadcrumb  p-3 rounded-3 breadcrumb-custom-background
+.breadcrumb-custom-background {
+    background-color: #e9ecef;
+}
