@@ -43,3 +43,16 @@ body {
 .breadcrumb-custom-background {
     background-color: #e9ecef;
 }
+
+/* media and media-body is removed in bootstrap 5 */
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.media-body {
+    -ms-flex: 1;
+    flex: 1
+}
