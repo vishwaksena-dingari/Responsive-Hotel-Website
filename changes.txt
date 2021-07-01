@@ -35,14 +35,9 @@ thead-dark -> table-dark
 no need for mb-0
 
 # media and media-body not present in bootstrap 5
-.media {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: start;
-    align-items: flex-start
-}
+media -> d-flex align-items-center
+media-body -> flex-shrink
 
-.media-body {
-    -ms-flex: 1;
-    flex: 1
-}
+# badge
+badge-danger -> bg-danger
+badge-pill -> rounded-pill
