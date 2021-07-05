@@ -18,7 +18,8 @@
 <body>
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar"
+                aria-controls="Navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" height="30" width="41"></a>
@@ -36,7 +37,7 @@
                 </ul>
                 <span class="navbar-text">
                     <a data-bs-toggle="modal" data-bs-target="#loginModal">
-                        <span class="fa fa-sign-in"></span> Login</a>
+                        <span class="fa fa-sign-in fa-lg"></span> Login</a>
                 </span>
             </div>
         </div>
@@ -70,9 +71,10 @@
                                 </div>
                             </div>
                             <div class="mt-1 g-2 row justify-content-end">
-                                <button type="button" class="col-1 btn btn-secondary btn-sm ms-auto"
+                                <button type="button" class="col-4 col-sm-2 btn btn-secondary btn-sm ms-auto"
                                     data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="col-1 btn btn-primary btn-sm ms-1">Sign in</button>
+                                <button type="submit" class="col-4 col-sm-2 btn btn-primary btn-sm ms-1">Sign
+                                    in</button>
                             </div>
                         </div>
                     </form>
@@ -127,16 +129,17 @@
                         </div>
                         <div class="row mb-3 align-items-center">
                             <label class="col-sm-12 col-md-4 mb-1"><strong>Section</strong></label>
-                            <div class="col-10 col-sm-6 col-md-4 mb-1 btn-group" role="group">
+                            <div class="col-12 col-sm-8 col-md-4 mb-1 btn-group" role="group">
 
-                                <input type="radio" class="btn-check form-check-input" name="section" id="non-smoking" autocomplete="off"
-                                    value="non-smoking" checked>
+                                <input type="radio" class="btn-check form-check-input" name="section" id="non-smoking"
+                                    autocomplete="off" value="non-smoking" checked>
                                 <label role="button" class="btn btn-outline-success form-check-label"
                                     for="non-smoking">Non-Smoking</label>
-                                
-                                <input type="radio" class="btn-check form-check-input" name="section" id="smoking" autocomplete="off"
-                                    value="smoking">
-                                <label role="button" class="btn btn-outline-danger form-check-label" for="smoking">Smoking</label>
+
+                                <input type="radio" class="btn-check form-check-input" name="section" id="smoking"
+                                    autocomplete="off" value="smoking">
+                                <label role="button" class="btn btn-outline-danger form-check-label"
+                                    for="smoking">Smoking</label>
 
                             </div>
                         </div>
@@ -150,8 +153,9 @@
                             </div>
                         </div>
                         <div class="mt-1 row justify-content-end">
-                            <button data-bs-dismiss="modal" class="col-2 me-1 btn btn-secondary">Cancel</button>
-                            <button type="submit" class="col-2 btn btn-primary">Reserve</button>
+                            <button data-bs-dismiss="modal"
+                                class="col-4 col-sm-2 me-1 btn btn-secondary">Cancel</button>
+                            <button type="submit" class="col-4 col-sm-2 btn btn-primary">Reserve</button>
                         </div>
                 </div>
                 </form>
@@ -168,10 +172,10 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-8 col-sm-3 align-self-center">
                     <img src="img/logo.png" alt="logo" class="img-fluid">
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-8 col-sm-3 align-self-center">
                     <a role="button" class="btn nav-link btn-warning text-white" data-bs-toggle="modal"
                         data-bs-target="#reserveform">Reserve Table</a>
                 </div>
@@ -182,14 +186,15 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="mycarousel" class="carousel slide justify-content-center" data-bs-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <img src="img/uthappizza.png" alt="uthappizza" class="d-block img-fluid">
                             <div class="carousel-caption d-none d-md-block">
                                 <h2>Uthappizza <span class="badge bg-danger">HOT</span> <span
                                         class="badge rounded-pill bg-secondary">$4.99</span></h2>
-                                <p>A unique combination of Indian Uthappam (pancake) and Italian
+                                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                                    Italian
                                     pizza, topped with Cerignola
                                     olives,
                                     ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
@@ -231,6 +236,14 @@
                     <a role="button" href="#mycarousel" class="carousel-control-next" data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -353,13 +366,27 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
     <!-- <script>
+        // $(document).ready(function() {
+        // $('[data-bs-toggle="tooltip"]').tooltip()
+        // });
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         });
     </script> -->
+    <script>
+        $(document).ready(function() {
+            $('#mycarousel').carousel({interval: 2000});
+            $('#carousel-pause').click(function() {
+                $('#mycarousel').carousel('pause');
+            });
+            $('#carousel-play').click(function () {
+                $('#mycarousel').carousel('cycle');
+            });
+        });
+    </script>
 </body>
 
 </html>
