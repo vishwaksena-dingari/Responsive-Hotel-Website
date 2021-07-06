@@ -1,11 +1,11 @@
 .row-header {
     margin: 0px auto;
-    padding: 0px 0px;
+    padding: 0px auto;
 }
 
 .row-content {
     margin: 0px auto;
-    padding: 50px 0px;
+    padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge;
     min-height: 400px;
 }
@@ -13,17 +13,18 @@
 .footer {
     background-color: #d1c4e9;
     margin: 0px auto;
-    padding: 20px 0px;
+    padding: 20px 0px 20px 0px;
 }
 
+/* ############################## */
 .jumbotron-custom {
+    padding: 70px 30px 70px 30px;
     margin: 0px auto;
-    padding: 70px 30px;
-    background: #9575cd;
-    color: floralwhite;
+    background-color: #9575cd;
+    color: #fffaf0;
 }
 
-address {
+.address {
     font-size: 80%;
     margin: 0px;
     color: #0f0f0f;
@@ -38,6 +39,7 @@ body {
     background-color: #512da8;
 }
 
+/* ############################# */
 .breadcrumb-custom-background {
     background-color: #e9ecef;
 }
@@ -53,11 +55,11 @@ body {
     background: #512da8;
 }
 
-.carousel .carousel-item {
+.carousel-item {
     height: 300px;
 }
 
-.carousel .carousel-item img {
+.carousel-item img {
     position: absolute;
     top: 0;
     left: 0;
@@ -65,8 +67,8 @@ body {
 }
 
 #carouselButton {
-    right: 0px;
+    right: 0;
+    bottom: 0;
     position: absolute;
-    bottom: 0px;
     z-index: 1;
 }
