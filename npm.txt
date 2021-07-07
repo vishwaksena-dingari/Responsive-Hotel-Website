@@ -1,0 +1,92 @@
+# Initializing package.json
+npm init
+
+# Installing an NPM Module | --save-dev saves that this project uses lite-server module
+npm install lite-server --save-dev
+
+## edit in package.json
+scripts{
+    "start": "npm run lite"
+    "lite": "lite-server"
+}
+
+################# IN Bootstrap4/conFusion FOLDER
+npm install
+
+# then git commit
+# to install specific version moduleName@version
+# --save saves to package.json to dependencies
+# --save-dev saves to package.json to devDependencies
+# -g means installs globally
+npm install bootstrap --save
+npm install jquery popper.js --save
+npm install font-awesome --save
+npm install bootstrap-social --save
+
+
+# sass and less
+npm install -g less
+npm install --save-dev node-sass
+# npm install --save-dev sass
+
+# (onchange or watch) & (parallelshell)
+npm install --save-dev onchange parallelshell
+
+##################################
+# npm module parallelshell changes
+# go to the file:
+node_modules/parallelshell/index.js
+# Then change this line:
+cwd: process.versions.node < '8.0.0' ? process.cwd : process.cwd(),
+# To this: 
+cwd: parseInt(process.versions.node) < 8 ? process.cwd : process.cwd(),
+##################################
+
+npm install --save-dev rimraf
+
+npm -g install copyfiles
+
+npm -g install imagemin-cli
+
+npm install --save-dev usemin-cli cssmin uglifyjs htmlmin
+# npm install --save-dev usemin-cli@0.5.1 cssmin@0.4.3 uglifyjs@2.4.11 htmlmin@0.0.7
+# npm install --save-dev usemin-cli cssmin uglify-js htmlmin
+
+## NOTE: usemin is not working on bootstrap js files so manually add bootstrap.min.js file to dist/js/
+
+# npm install -g grunt-cli (used in course)
+npm install grunt-cli --save-dev
+npm install grunt --save-dev
+npm install --save-dev grunt-sass
+npm install --save-dev time-grunt
+npm install --save-dev jit-grunt
+npm install grunt-contrib-watch --save-dev
+npm install grunt-browser-sync --save-dev
+
+npm install grunt-contrib-copy --save-dev
+npm install grunt-contrib-clean --save-dev
+npm install grunt-contrib-imagemin --save-dev
+
+npm install grunt-contrib-concat --save-dev
+npm install grunt-contrib-cssmin --save-dev
+npm install grunt-contrib-htmlmin --save-dev
+npm install grunt-contrib-uglify --save-dev
+npm install grunt-filerev --save-dev
+npm install grunt-usemin --save-dev
+
+
+npm install -g gulp-cli
+#npm install gulp-cli --save-dev
+npm install gulp --save-dev
+npm install gulp-sass --save-dev
+npm install browser-sync --save-dev
+
+npm install del --save-dev
+npm install gulp-imagemin --save-dev
+
+npm install gulp-uglify --save-dev
+npm install gulp-usemin --save-dev
+npm install gulp-rev --save-dev
+npm install gulp-clean-css --save-dev
+npm install gulp-flatmap --save-dev
+npm install gulp-htmlmin --save-dev

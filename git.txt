@@ -1,0 +1,24 @@
+01. git --version
+02. git config --global user.email ""
+03. git config --global user.name ""
+04. git config --list
+05. git init
+06. git status
+07. git add .
+08. git commit -m "MESSAGE"
+09. git log --oneline
+10. git checkout <commit> <file> (ex: git checkout e0e7b43 index.html)
+11. git reset HEAD <file>
+12. git checkout -- <file>
+13. git reset <file>
+14. git reset
+15. git remote add origin <repository URL>
+16. git push -u origin master
+
+Remove directory from git and local
+git rm -r one-of-the-directories // This deletes from filesystem
+git commit . -m "Remove duplicated directory"
+git push origin <your-git-branch> (typically 'master', but not always)
+
+Remove directory from git but NOT local
+git rm -r --cached myFolder
