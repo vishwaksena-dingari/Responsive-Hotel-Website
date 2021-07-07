@@ -15,12 +15,15 @@
     "imagemin": "imagemin img/* -o dist/img",
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
-    "grunt": "grunt build"
+    "grunt": "grunt build --force",
+    "gulp": "gulp build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.27.4",
     "cssmin": "^0.4.3",
+    "del": "^6.0.0",
     "grunt": "^1.4.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-cli": "^1.4.3",
@@ -29,12 +32,22 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^4.0.0",
     "grunt-contrib-htmlmin": "^3.1.0",
-    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-imagemin": "^4.0.0",
     "grunt-contrib-uglify": "^5.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-filerev": "^2.3.1",
     "grunt-sass": "^3.1.0",
-    "grunt-usemin": "^3.1.1",
+    "grunt-usemin": "^0.1.13",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-usemin": "^0.3.30",
     "htmlmin": "^0.0.7",
     "jit-grunt": "^0.10.0",
     "lite-server": "^2.3.0",
@@ -45,7 +58,7 @@
     "time-grunt": "^2.0.0",
     "uglify-js": "^2.4.24",
     "uglifyjs": "^2.4.11",
-    "usemin-cli": "^0.6.0"
+    "usemin-cli": "^0.0.7"
   },
   "dependencies": {
     "@popperjs/core": "^2.9.2",
@@ -54,7 +67,6 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.6.0",
     "less": "^4.1.1",
-    "popper.js": "^1.16.1",
-    "uuid": "^8.3.2"
+    "popper.js": "^1.16.1"
   }
 }
