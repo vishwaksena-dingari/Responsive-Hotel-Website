@@ -10,4 +10,4 @@ Mobile View:
 
 Desktop View:
 
-<img src="readmeImages/index.png" width="500px"> <img src="readmeImages/contactus.png"  width="500px"> <img src="readmeImages/aboutus.png"  width="500px">
+<img src="readmeImages/index.png" width="300px"> <img src="readmeImages/contactus.png"  width="300px"> <img src="readmeImages/aboutus.png"  width="300px">
